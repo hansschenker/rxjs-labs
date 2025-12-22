@@ -1,15 +1,19 @@
 {
   "name": "rxjs-labs",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "workspaces": [
     "packages/*",
     "apps/*",
-    "docs/*"
+    "docs"
   ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "npm --workspace docs run dev",
+    "docs:build": "npm --workspace docs run build",
+    "docs:preview": "npm --workspace docs run preview"
     "dev:labs-web": "npm run dev --workspace apps/labs-web",
     "build:labs-web": "npm run build --workspace apps/labs-web",
     "preview:labs-web": "npm run preview --workspace apps/labs-web",

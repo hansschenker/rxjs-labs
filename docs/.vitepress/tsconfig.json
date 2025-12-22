@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": false,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["config.ts", "../**/*.ts", "../**/*.md"],
+  "exclude": ["../node_modules", "../../node_modules"]
+}

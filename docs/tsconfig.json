@@ -1,0 +1,7 @@
+{
+  "extends": "./.vitepress/tsconfig.json",
+  "compilerOptions": {
+    "types": ["vitepress/client"],
+    "baseUrl": "."
+  }
+}

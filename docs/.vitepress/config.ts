@@ -13,7 +13,7 @@ nav: [
 { text: 'Introduction', link: '/' },
 { text: 'Guides', link: '/guides/getting-started' },
 { text: 'API', link: '/api/overview' },
-{ text: 'Operators', link: '/operators/' }
+{ text: 'Operators', link: '/operators/' },
 ],
 sidebar: {
 '/guides/': [

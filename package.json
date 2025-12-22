@@ -28,6 +28,9 @@
     "dev:rxjs-workflow-time-visual-text": "npm run dev --workspace apps/rxjs-workflow-time-visual-text",
     "build:rxjs-workflow-time-visual-text": "npm run build --workspace apps/rxjs-workflow-time-visual-text",
     "preview:rxjs-workflow-time-visual-text": "npm run preview --workspace apps/rxjs-workflow-time-visual-text"
+    "test": "npm run test:packages",
+    "test:packages": "npm --workspaces --if-present run test -- --runInBand",
+    "build:packages": "npm --workspaces --if-present run build"
   },
   "keywords": [],
   "author": "",

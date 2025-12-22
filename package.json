@@ -10,10 +10,9 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "npm --workspace docs run dev",
     "docs:build": "npm --workspace docs run build",
-    "docs:preview": "npm --workspace docs run preview"
+    "docs:preview": "npm --workspace docs run preview",
     "dev:labs-web": "npm run dev --workspace apps/labs-web",
     "build:labs-web": "npm run build --workspace apps/labs-web",
     "preview:labs-web": "npm run preview --workspace apps/labs-web",
@@ -31,7 +30,7 @@
     "preview:rxjs-web": "npm run preview --workspace apps/rxjs-web",
     "dev:rxjs-workflow-time-visual-text": "npm run dev --workspace apps/rxjs-workflow-time-visual-text",
     "build:rxjs-workflow-time-visual-text": "npm run build --workspace apps/rxjs-workflow-time-visual-text",
-    "preview:rxjs-workflow-time-visual-text": "npm run preview --workspace apps/rxjs-workflow-time-visual-text"
+    "preview:rxjs-workflow-time-visual-text": "npm run preview --workspace apps/rxjs-workflow-time-visual-text",
     "test": "npm run test:packages",
     "test:packages": "npm --workspaces --if-present run test -- --runInBand",
     "build:packages": "npm --workspaces --if-present run build"

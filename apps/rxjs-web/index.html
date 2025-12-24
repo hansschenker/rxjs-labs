@@ -3,20 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RxJS Vite Starter</title>
+    <title>RxJS YouTube Playlists</title>
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
     <main class="app">
-      <header>
-        <h1>RxJS + Vite</h1>
-        <p>Streaming values with a simple observable.</p>
+      <header class="app__header">
+        <div>
+          <p class="eyebrow">RxJS + YouTube Data API</p>
+          <h1>Hans Schenker Playlists</h1>
+          <p class="subtitle">
+            Sign in to fetch public playlists for channel
+            <span class="mono">UCYlW9EuQnlNRtEYqVtpfbDw</span>.
+          </p>
+        </div>
+        <div class="actions">
+          <button id="login" type="button">Authorize with Google</button>
+          <button id="logout" type="button" class="ghost" hidden>Sign out</button>
+        </div>
       </header>
+
       <section class="panel">
-        <p id="output" aria-live="polite">Waiting for the stream...</p>
-        <button id="stop" type="button">Stop stream</button>
+        <div class="status">
+          <span class="status__label">Status</span>
+          <p id="status" aria-live="polite">Waiting for sign-in.</p>
+        </div>
+        <p id="error" class="error" role="alert" hidden></p>
+
+        <div class="results">
+          <h2>Playlists</h2>
+          <ul id="playlists" class="playlist-list" aria-live="polite"></ul>
+        </div>
       </section>
     </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
